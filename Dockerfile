@@ -5,7 +5,7 @@ ADD etc /etc
 
 RUN \
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-MariaDB && \
-yum install -y MariaDB-server MariaDB-client && \
+yum install -y MariaDB-server && \
 yum clean all
 
 ADD run.sh /run.sh
